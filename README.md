@@ -1,12 +1,14 @@
 # githubTest
+VHDL Code:
+  
 Library ieee; 
-use ieee.std_logic_1164.all;  
-
-entity or1 is
-   port(x,y:in bit ; z:out bit); 
-end or1; 
+use ieee.std_logic_1164.all; 
  
-architecture virat of or1 is
+entity not1 is
+   port(x:in bit ; y:out bit); 
+end not1; 
+ 
+architecture virat of not1 is
 begin
-   z<=x or y; 
-end virat;
+   y<=not x;
+end virat; 
